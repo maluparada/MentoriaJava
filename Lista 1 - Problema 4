@@ -1,0 +1,22 @@
+Algoritmo_peca;
+
+Var
+	Cód_1, cód_2: caracter;
+ven_peca1, ven_peca2 : inteiro
+valorpeca1, valpeca2, perc: Real
+Inicio
+	Escrever: (´informe o código, a quantidade de peças vendidas e o valor Unitário da peça 1: ´);
+		Ler (cód_1);
+		Ler (vem_peca1);
+		Ler (valor1);
+Total_1← vem_peca1*valor1;
+	Escrever: (‘informe o código, a quantidade de peças vendidas e o valor Unitário da peça 2:`);
+		Ler (Cód_1)
+Ler (vem_peca2);
+Ler (valpeca2);
+Total_2 ← vem_peca2*valpeca1;
+	Escrever (Informe o percentual de desconto IPI: `)
+		Ler( perc);
+Tota_geral ← (total_1+total_2*per)/100;
+		Escrever ( O total pago pela compra foi: `, total_geral)
+Fim.
