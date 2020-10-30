@@ -6,11 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String codigoprimeirapeça;
+        int codigoprimeirapeça;
         float valorprimeirapeça;
         int quantidadeprimeirapeça;
 
-        String codigosegundapeça;
+        int codigosegundapeça;
         float valorsegundapeça;
         int quantidadesegundapeça;
 
@@ -22,14 +22,14 @@ public class Main {
         porcentagemipi = reader.nextFloat();
 
         System.out.printf("Informe o código da peça 1:\n");
-        codigoprimeirapeça = reader.nextLine();
+        codigoprimeirapeça = reader.nextInt();
         System.out.printf("Informe o valor unitário da peça 1:\n");
         valorprimeirapeça = reader.nextFloat();
         System.out.printf("Informe a quantidade de peças do tipo 1:\n");
         quantidadeprimeirapeça = reader.nextInt();
 
         System.out.printf("Informe o código da peça 2:\n");
-        codigosegundapeça = reader.nextLine();
+        codigosegundapeça = reader.nextInt();
         System.out.printf("Informe o valor unitário da peça 2:\n");
         valorsegundapeça = reader.nextFloat();
         System.out.printf("Informe a quantidade de peças do tipo 2:\n");
@@ -37,9 +37,6 @@ public class Main {
 
         float valortotal = (valorprimeirapeça*quantidadeprimeirapeça + valorsegundapeça*quantidadesegundapeça)*(porcentagemipi/100 + 1);
 
-        System.out.printf("Este será o valor total a ser pago:\n"valortotal);
+        System.out.printf("Este será o valor total a ser pago:\n" + valortotal);
     }
 }
-
-
-
