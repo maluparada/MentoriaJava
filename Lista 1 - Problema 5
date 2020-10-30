@@ -1,3 +1,25 @@
-salario = float(input("Informe o salário do funcionário"))
-minimo = float(input("Informe o salário mínimo"))
-print("O funcionário ganha", salario/minimo,"salários mínimos")
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int salariominimo = 1045;
+        Float salario;
+        float quantidadedesalariosminimos;
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Salário mínimo: " + salariominimo);
+
+        System.out.println("Qual o seu salário? ");
+        salario = reader.nextFloat();
+
+        quantidadedesalariosminimos = (salario/salariominimo);
+
+        System.out.print("Você recebe " +quantidadedesalariosminimos+ " salários mínimos");
+
+    }
+}
