@@ -1,2 +1,16 @@
-saldo = float( input("Informe o saldo"))
-print( "O saldo reajustado em 1% fica", saldo * (1 + 1/100) )
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Informe o saldo:\n");
+        float saldo = reader.nextFloat();
+
+        System.out.println("O seu saldo reajustado fica:", saldo*1.01);
+    }
+}
