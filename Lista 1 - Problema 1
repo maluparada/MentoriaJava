@@ -1,26 +1,30 @@
+package com.company;
+
 import java.util.Scanner;
 
-public class IdadeDiaMesAno {
-	public static void main(String[] args){
-		final short dias_ano = 365;
-		final short dias_mes = 30;
-		short dias;
-		short meses;
-		short anos;
-		Scanner leitor = new Scanner(System.in);
-		
-		System.out.println("Qual a sua idade?");
-		System.out.print("Anos: ");
-		anos = leitor.nextShort();
-		
-		System.out.print("Meses: ");
-		meses = leitor.nextShort();
-		
-		System.out.print("Dias: ");
-		dias = leitor.nextShort();
-		
-		dias += (anos * dias_ano) + (meses * dias_mes);
-		
-		System.out.println("\n\nA sua idade em dias é: " + dias);
-	}
+public class Main {
+
+    public static void main(String[] args) {
+
+        int diasano = 365;
+        int diasmes = 30;
+        int anos;
+        int mes;
+        int dias;
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Quantos anos você tem?");
+        anos = reader.nextInt();
+
+        System.out.print("Meses:");
+        mes = reader.nextInt();
+
+        System.out.print("Dias:");
+        dias = reader.nextInt();
+
+        dias = (anos * diasano) + (mes * diasmes) + (dias);
+
+        System.out.printf("A sua idade em dias é:\n" + dias);
+    }
 }
