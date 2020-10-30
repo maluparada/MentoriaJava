@@ -11,6 +11,9 @@ public class Main {
         System.out.print("Informe o saldo:\n");
         float saldo = reader.nextFloat();
 
-        System.out.println("O seu saldo reajustado fica:", saldo*1.01);
+        double saldoreajustado = saldo*1.01;
+
+        System.out.printf("O seu saldo reajustado fica:\n" + saldoreajustado);
+
     }
 }
