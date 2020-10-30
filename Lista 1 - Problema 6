@@ -1,19 +1,23 @@
-public static void main(String args []){
-   
-    String a="";
-    int num=0;
-    int antecessor=0;
-    int sucessor=0;
-    String saida="";
-    
-    a = JOptionPane.showInputDialog("Entre com o número");
-    num = Integer.parseInt(a);
-    
-    antecessor = num -1;
-    sucessor = num +1;
-    
-    saida += " O antecessor de " + num + " é " + antecessor;
-    saida += "\n O sucessor de " + num + " é " + sucessor;
-    
-    JOptionPane.showMessageDialog(null,saida);
-    
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int numero;
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Escolha um número: ");
+        numero = reader.nextInt();
+
+        int antecessor = (numero - 1);
+        int sucessor = (numero + 1);
+
+        System.out.println("O antecessor de " + numero + " é: " + antecessor);
+
+        System.out.println("O sucessor é de " + numero + " é: " + sucessor);
+    }
+}
