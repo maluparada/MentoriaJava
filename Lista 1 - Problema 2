@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-                Integer mediaAritmetica;
+        Integer mediaAritmetica;
 
-                mediaAritmetica = (8 + 9 + 7) / 3;
+        mediaAritmetica = (8 + 9 + 7) / 3;
 
-                System.out.println("A Média Aritmética entre 8,9,7 é: " + mediaAritmetica);
-            }
-        }  
+        System.out.println("A Média Aritmética entre 8,9,7 é: " + mediaAritmetica);
+    }
+}
