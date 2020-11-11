@@ -1,0 +1,135 @@
+// Problema 2
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
+        String nome;
+        String estadocivil;
+        String sexo;
+        Int tempodecasada;
+
+        System.out.println("Qual o seu nome? ");
+        nome = reader.nextLine();
+
+        System.out.println("Qual o seu sexo? ");
+        sexo = reader.nextLine();
+
+        System.out.println("Qual o seu estado civil? ");
+        estadocivil = reader.nextLine();
+
+        if (estadocivil == "Casada" && sexo == "F"){
+            System.out.println("Qual o seu tempo de casada? ");
+            tempodecasada = reader.nextLine();
+        }
+        else
+            System.exit(0);
+    }
+}
+
+// Problema 3
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    private static void Ex5() throws Exception;
+
+            int odds = 0, evens = 0;
+            int somaPares;
+            int somaGeral;
+
+            int x;
+
+            while (true) {
+                System.out.println("Digite um valor inteiro positivo: ");
+                x = reader.nextInt;
+            if (x<0) {
+               throw new Exception ("O número a ser inserido deve ser positivo: ");
+            } else if (x==0) {
+                break;
+            } else {
+                somaGeral += x;
+
+                if(x%2==0) {
+                    evens++;
+                    somaPares += x;
+                } else {
+                    odds++;
+                }
+
+            }
+
+}
+
+// Problema 8
+
+int main(void)
+    {
+        int a, b, c;
+        scanf("%d", &a);
+        scanf("%d", &b);
+        scanf("%d", &c);
+        if (a > b)                                           // a>b
+           if (b > c) printf("%4d%4d%4d\n", a, b, c);       // a>b>c
+           else                                             // a>b,c>=b
+               if (a > c) printf("%4d%4d%4d\n", a, c, b);   // a>c>=b
+               else printf("%4d%4d%4d\n", c, a, b);         // c>=a>b
+      else                                                 // b>=a
+           if (b > c)                                       // b>=a,b>c
+               if (a > c) printf("%4d%4d%4d\n", b, a, c);   // b>=a>c
+               else printf("%4d%4d%4d\n", b, c, a);         // b>c>=a
+         else printf("%4d%4d%4d\n", c ,b, a);             // c>=b>=a
+       return 0;
+   }
+
+// Problema 9
+
+var
+
+altura :inteiro
+
+sexo : caractere
+
+feminino :real
+
+masculino:real
+
+peso :real
+
+inicio
+
+// Seção de Comandos
+
+escreval("Informe a altura:")
+
+leia(altura)
+
+escreval("Informe o sexo:")
+
+leia(sexo)
+
+se sexo="M" então
+
+peso:=(72.7*altura)-58
+
+escreval("peso ideal é",peso)
+
+senao
+
+peso:=(62.1*altura)-44.7
+
+escreval("peso ideal é",peso)
+
+fimse
+
+fimalgoritmo
