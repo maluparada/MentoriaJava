@@ -1,23 +1,47 @@
 // Problema 4
 
-n = 1
-c1 = 0
-c2 = 0
-c3 = 0
-c4 = 0
-while n > 0:
-n = int(input("Digite um número"))
-if n >= 0 and n <= 25:
-c1 = c1 + 1
-elif n >= 26 and n <= 50:
-c2 = c2 + 1
-elif n >= 51 and n <= 75:
-c3 = c3 + 1
-elif n >= 76 and n <= 100:
-c4 = c4 + 1
-print("A quantidade de números entre 0 e 25 é: ", c1, ", entre votos
-26-50 é: ", c2, ", entre votos 51-75 é: ", c3, ", e entre votos 76-100
-é: ", c3)
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        private static void throws Exception;
+
+        Scanner reader = new Scanner(System.in);
+
+        int n;
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int d = 0;
+
+        while (true) {
+
+            System.out.println("Digite um valor inteiro positivo: ");
+            n = reader.nextInt;
+
+            if (n < 0) {
+                throw new Exception ("O número a ser inserido deve ser positivo: ");
+            } else if (n == 0) {
+                break;
+            } else (n > 0) {
+                if (n > 0 && n <= 25){
+                    a = a + 1;
+                } else if (n >= 26 && n <= 50) {
+                    b = b + 1;
+                } else if (n >= 51 && n <= 75) {
+                    c = c + 1;
+                } else if (n >= 76 && n <= 100) {
+                d = d + 1;
+            }
+                System.out.println("A quantidade de números entre 0 e 25 é: ", + a +, ", entre 26 e 50 é":, + b + , "entre 51 e 75 é: ", + c + , ", e entre 76 e 100 é: ", + d)
+        }
+
+    }
+}
 
 // Problema 6
 
