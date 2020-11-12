@@ -1,0 +1,57 @@
+// Problema 4
+
+n = 1
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+while n > 0:
+n = int(input("Digite um número"))
+if n >= 0 and n <= 25:
+c1 = c1 + 1
+elif n >= 26 and n <= 50:
+c2 = c2 + 1
+elif n >= 51 and n <= 75:
+c3 = c3 + 1
+elif n >= 76 and n <= 100:
+c4 = c4 + 1
+print("A quantidade de números entre 0 e 25 é: ", c1, ", entre votos
+26-50 é: ", c2, ", entre votos 51-75 é: ", c3, ", e entre votos 76-100
+é: ", c3)
+
+// Problema 6
+
+algoritmo "nome"
+var
+n: vetor[100..200] de inteiro
+i, impar: inteiro
+inicio
+escreval("Os números impares de 100 a 200 são:")
+para i de 100 ate 200 faca
+se(i mod 2 <> 0) entao
+escreval(i)
+fimse
+fimpara
+fimalgoritmo
+
+// Problema 8 e 9
+
+// Problema 10
+
+algoritmo "Testa fatorial"
+var
+   valor, fat, n: inteiro
+inicio
+      leia(valor)
+      fat <- 1
+      n <- 1
+      enquanto (fat<valor) faca
+         n <- n + 1
+         fat <- fat * n
+      fimenquanto
+      se (fat=valor) entao
+         escreval(valor, " corresponde ao fatorial de ", n)
+      senao
+         escreval(valor, " não corresponde a nenhum fatorial.")
+      fimse
+fimalgoritmo
