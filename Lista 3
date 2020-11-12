@@ -38,20 +38,32 @@ fimalgoritmo
 
 // Problema 10
 
-algoritmo "Testa fatorial"
-var
-   valor, fat, n: inteiro
-inicio
-      leia(valor)
-      fat <- 1
-      n <- 1
-      enquanto (fat<valor) faca
-         n <- n + 1
-         fat <- fat * n
-      fimenquanto
-      se (fat=valor) entao
-         escreval(valor, " corresponde ao fatorial de ", n)
-      senao
-         escreval(valor, " não corresponde a nenhum fatorial.")
-      fimse
-fimalgoritmo
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int fat = 1;
+        int n = 1;
+        int valor;
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Digite um valor inteiro positivo: ");
+        valor = reader.nextInt();
+
+        if (fat < valor) {
+            while (fat < valor) {
+                n = n + 1;
+                fat = fat * n;
+            }
+        } else if (fat == valor) {
+            System.out.println(valor, " corresponde ao fatorial de ", n);
+        } else {
+            System.out.println(valor, " não corresponde a nenhum fatorial.");
+        }
+    }
+}
