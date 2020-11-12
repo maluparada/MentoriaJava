@@ -73,63 +73,78 @@ public class Main {
 
 // Problema 8
 
-int main(void)
-    {
-        int a, b, c;
-        scanf("%d", &a);
-        scanf("%d", &b);
-        scanf("%d", &c);
-        if (a > b)                                           // a>b
-           if (b > c) printf("%4d%4d%4d\n", a, b, c);       // a>b>c
-           else                                             // a>b,c>=b
-               if (a > c) printf("%4d%4d%4d\n", a, c, b);   // a>c>=b
-               else printf("%4d%4d%4d\n", c, a, b);         // c>=a>b
-      else                                                 // b>=a
-           if (b > c)                                       // b>=a,b>c
-               if (a > c) printf("%4d%4d%4d\n", b, a, c);   // b>=a>c
-               else printf("%4d%4d%4d\n", b, c, a);         // b>c>=a
-         else printf("%4d%4d%4d\n", c ,b, a);             // c>=b>=a
-       return 0;
-   }
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        int a;
+        int b;
+        int c;
+
+        if (a > b) {
+            if (b > c) {
+                System.out.println(+a+, +b+, +c);
+            } else {
+                if (a > c) {
+                    System.out.println(+a+, +c+, +b);
+                } else {
+                    System.out.println(+c+, +a+, +b);
+                }
+            } else{
+                if (b > c) {
+                    if (a > c) {
+                        System.out.println(+b+, +a+, +c);
+                    } else {
+                        System.out.println(+b+, +c+, +a);
+                    }
+                } else {
+                    System.out.println(+c+, +b+, +a);
+                }
+            }
+        }
+    }
+    
+}
+
 
 // Problema 9
 
-var
+package com.company;
 
-altura :inteiro
+import java.util.Scanner;
 
-sexo : caractere
+public class Main {
 
-feminino :real
+    public static void main(String[] args) {
 
-masculino:real
 
-peso :real
+        Scanner reader = new Scanner(System.in);
 
-inicio
+        int h;
+        string sexo;
+        float peso;
 
-// Seção de Comandos
+        System.out.println("Informe a altura: ");
+        h = reader.nextInt();
 
-escreval("Informe a altura:")
+        System.out.println("Informe o sexo: ");
+        sexo = reader.nextLine();
 
-leia(altura)
+        if (sexo = "M") {
 
-escreval("Informe o sexo:")
+            peso = (72.7 * h) - 58;
+            System.out.println("peso ideal é", +peso);
 
-leia(sexo)
+        } else {
 
-se sexo="M" então
-
-peso:=(72.7*altura)-58
-
-escreval("peso ideal é",peso)
-
-senao
-
-peso:=(62.1*altura)-44.7
-
-escreval("peso ideal é",peso)
-
-fimse
-
-fimalgoritmo
+            peso = (62.1 * h) - 44.7;
+            System.out.println("peso ideal é", +peso);
+        }
+    }
+}
