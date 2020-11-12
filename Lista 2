@@ -11,10 +11,10 @@ public class Main {
         Scanner reader = new Scanner(System.in);
         Scanner sc = new Scanner(System.in);
 
-        String nome;
-        String estadocivil;
-        String sexo;
-        Int tempodecasada;
+        string nome;
+        string estadocivil;
+        string sexo;
+        int tempodecasada;
 
         System.out.println("Qual o seu nome? ");
         nome = reader.nextLine();
@@ -42,33 +42,29 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static void Ex5() throws Exception;
+    Scanner reader = new Scanner(System.in);
 
-            int odds = 0, evens = 0;
-            int somaPares;
-            int somaGeral;
+    int x;
 
-            int x;
+        System.out.println("Digite um valor inteiro positivo: ");
+        x = reader.nextInt();
 
-            while (true) {
-                System.out.println("Digite um valor inteiro positivo: ");
-                x = reader.nextInt;
-            if (x<0) {
-               throw new Exception ("O número a ser inserido deve ser positivo: ");
-            } else if (x==0) {
-                break;
+        if (x < 0) {
+            throw new Exception("O número a ser inserido deve ser positivo: ");
+
+        } else if (x == 0) {
+            break;
+
+        } else {
+            if (x % 2 == 0) {
+                System.out.println("O número inserido é par.");
             } else {
-                somaGeral += x;
-
-                if(x%2==0) {
-                    evens++;
-                    somaPares += x;
-                } else {
-                    odds++;
-                }
-
+                System.out.println("O número inserido é ímpar.");;
             }
 
+        }
+
+    }
 }
 
 // Problema 8
