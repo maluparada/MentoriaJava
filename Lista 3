@@ -21,18 +21,26 @@ print("A quantidade de números entre 0 e 25 é: ", c1, ", entre votos
 
 // Problema 6
 
-algoritmo "nome"
-var
-n: vetor[100..200] de inteiro
-i, impar: inteiro
-inicio
-escreval("Os números impares de 100 a 200 são:")
-para i de 100 ate 200 faca
-se(i mod 2 <> 0) entao
-escreval(i)
-fimse
-fimpara
-fimalgoritmo
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int cont;
+        String impar = "";
+
+        for (cont = 100; cont <= 200; cont++) {
+
+            if (cont % 2 != 0)
+                impar += cont + ", ";
+
+        }
+        System.out.println("Os número impares entre 100 e 200 são: " + impar);
+    }
+}
 
 // Problema 8 e 9
 
@@ -61,9 +69,9 @@ public class Main {
                 fat = fat * n;
             }
         } else if (fat == valor) {
-            System.out.println(valor, " corresponde ao fatorial de ", n);
+            System.out.println(+ valor +, " corresponde ao fatorial de ", + n);
         } else {
-            System.out.println(valor, " não corresponde a nenhum fatorial.");
+            System.out.println(+ valor +, " não corresponde a nenhum fatorial.");
         }
     }
 }
