@@ -1,0 +1,146 @@
+// Problema 2
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
+        string nome;
+        string estadocivil;
+        string sexo;
+        int tempodecasada;
+
+        System.out.println("Qual o seu nome? ");
+        nome = reader.nextLine();
+
+        System.out.println("Qual o seu sexo? ");
+        sexo = reader.nextLine();
+
+        System.out.println("Qual o seu estado civil? ");
+        estadocivil = reader.nextLine();
+
+        if (estadocivil == "Casada" && sexo == "F"){
+            System.out.println("Qual o seu tempo de casada? ");
+            tempodecasada = reader.nextLine();
+        }
+        else
+            System.exit(0);
+    }
+}
+
+// Problema 3
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    Scanner reader = new Scanner(System.in);
+
+    int x;
+
+        System.out.println("Digite um valor inteiro positivo: ");
+        x = reader.nextInt();
+
+        if (x < 0) {
+            throw new Exception("O número a ser inserido deve ser positivo: ");
+
+        } else if (x == 0) {
+            break;
+
+        } else {
+            if (x % 2 == 0) {
+                System.out.println("O número inserido é par.");
+            } else {
+                System.out.println("O número inserido é ímpar.");;
+            }
+
+        }
+
+    }
+}
+
+// Problema 8
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        int a;
+        int b;
+        int c;
+
+        if (a > b) {
+            if (b > c) {
+                System.out.println(+a+, +b+, +c);
+            } else {
+                if (a > c) {
+                    System.out.println(+a+, +c+, +b);
+                } else {
+                    System.out.println(+c+, +a+, +b);
+                }
+            } else{
+                if (b > c) {
+                    if (a > c) {
+                        System.out.println(+b+, +a+, +c);
+                    } else {
+                        System.out.println(+b+, +c+, +a);
+                    }
+                } else {
+                    System.out.println(+c+, +b+, +a);
+                }
+            }
+        }
+    }
+    
+}
+
+
+// Problema 9
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        Scanner reader = new Scanner(System.in);
+
+        int h;
+        string sexo;
+        float peso;
+
+        System.out.println("Informe a altura: ");
+        h = reader.nextInt();
+
+        System.out.println("Informe o sexo: ");
+        sexo = reader.nextLine();
+
+        if (sexo = "M") {
+
+            peso = (72.7 * h) - 58;
+            System.out.println("peso ideal é", +peso);
+
+        } else {
+
+            peso = (62.1 * h) - 44.7;
+            System.out.println("peso ideal é", +peso);
+        }
+    }
+}
